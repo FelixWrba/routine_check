@@ -1,6 +1,7 @@
 :root {
     --bg-color: #ffffff;
     --primary-color: #444444;
+    --secondary-color: #777777;
     --accent-color: #aaaaaa;
     --highlight-color: #ffff00;
 }
@@ -104,4 +105,33 @@ a {
 
 .spacer--big {
     height: 24px;
+}
+
+.routine-card {
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    padding: 12px;
+    max-width: 400px;
+}
+
+.routine-card__top {
+    justify-content: space-between;
+}
+
+.routine-card__title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.routine-card__check {
+    accent-color: var(--primary-color);
+    width: 1rem;
+    border-radius: 50%;
+}
+
+.routine-card__description {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
 }

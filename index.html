@@ -5,15 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Routine Check</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <!-- Styles -->
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body onload="checkAccount();">
-    <h1 class="heading--big">Welcome back, <strong id="heading__user-name">User</strong></h1>
-    <div class="spacer--big"></div>
-    
+    <main id="main">
+        <h1 class="heading--big">Welcome back, <strong id="heading__user-name">User</strong></h1>
+        <div class="spacer--big"></div>
+        <div class="routines-container">
+            <div class="routine-card">
+                <div class="routine-card__top flex-row">
+                    <h3 class="routine-card__title">Learn for school</h3>
+                    <input type="checkbox" class="routine-card__check">
+                </div>
+                <div class="routine-card__description">Vocabulary, Homework, etc. for school</div>
+            </div>
+        </div>
+    </main>
 
     <!-- Scripts -->
     <script src="./scripts/main.js"></script>

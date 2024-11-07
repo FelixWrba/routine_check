@@ -1,8 +1,7 @@
 const main = document.getElementById('main');
 
 if (userName) {
-    alert('You already have a local account.');
-    location.href = '/';
+    changeMain(`<h1 class="heading--big">You alredy have a <b>local Account</b></h1><a href="/">Go to account <i>${userName}</i></a>`);
 }
 
 function createUser() {
@@ -16,14 +15,14 @@ function createUser() {
         <div class="spacer--big"></div>
         <form action="javascript:createFirstRoutine();" class="flex-column" autocomplete="off">
             <label for="title-input" class="input__label">Title</label>
-            <input type="text" id="title-input" name="title" class="input">
+            <input type="text" id="title-input" name="title" class="input" required>
             <label for="description-input" class="input__label">Description</label>
-            <input type="text" id="description-input" name="description" class="input">
+            <input type="text" id="description-input" name="description" class="input" required>
             <label for="notify-date-input" class="input__label">Notify me at ... every day!</label>
-            <input type="time" id="notify-date-input" name="notify-date" class="input">
+            <input type="time" id="notify-date-input" name="notify-date" class="input" required>
             <button type="submit" class="btn btn--narrow">Create</button>
             <div class="spacer--big"></div>
-            <a href="/" class="">Cancel</a>
+            <a href="/">Cancel</a>
         </form>`);
 }
 
@@ -36,5 +35,5 @@ function changeMain(html) {
 
 function createFirstRoutine() {
     CRUD.create();
-    location.href= '/';
+    location.href = '/';
 }
