@@ -16,8 +16,8 @@ function createUser() {
         <form action="javascript:createFirstRoutine();" class="flex-column" autocomplete="off">
             <label for="title-input" class="input__label">Title</label>
             <input type="text" id="title-input" name="title" class="input" required>
-            <label for="description-input" class="input__label">Description</label>
-            <input type="text" id="description-input" name="description" class="input" required>
+            <label for="description-input" class="input__label">Description (optional)</label>
+            <input type="text" id="description-input" name="description" class="input">
             <label for="notify-date-input" class="input__label">Notify me at ... every day!</label>
             <input type="time" id="notify-date-input" name="notify-date" class="input" required>
             <button type="submit" class="btn btn--narrow">Create</button>

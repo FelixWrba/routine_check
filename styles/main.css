@@ -6,6 +6,14 @@
     --highlight-color: #ffff00;
 }
 
+.dark-mode {
+    --bg-color: #222222;
+    --primary-color: #ffffff;
+    --secondary-color: #999999;
+    --accent-color: #444444;
+    --highlight-color: #818100;
+}
+
 body {
     font-family: 'Open sans', Arial, Helvetica, sans-serif;
     background-color: var(--bg-color);
@@ -16,6 +24,7 @@ body {
 * {
     -webkit-tap-highlight-color: transparent;
     font-family: inherit;
+    transition: background-color .3s;
 }
 
 ::selection {
@@ -108,7 +117,7 @@ a {
 }
 
 .routine-card {
-    border: 2px solid #dddddd;
+    border: 2px solid var(--accent-color);
     border-radius: 8px;
     padding: 12px;
     max-width: 400px;
